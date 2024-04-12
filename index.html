@@ -1,52 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The ND 100</title>
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1299703617624835"
-     crossorigin="anonymous"></script>
-	<meta name="google-adsense-account" content="ca-pub-1299703617624835">
-    <style>
-        body {
-            font-family: Georgia, sans-serif;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        #score {
-            font-weight: bold;
-        }
-	      .checkbox-label {
-        display: inline-block;
-        margin-bottom: 3px; /* Adjust this value to control the vertical spacing */
-    }
-
-    .checkbox-label span {
-        width: 20px; /* Adjust this value to accommodate larger numbers */
-        display: inline-block;
-        text-align: right;
-        margin-right: 10px;
-    }
-        h1 {
-            margin-bottom: 3px;
-        }
-        /* Add padding to create space between the script and the bucket list */
-        #script {
-            padding-bottom: 20px;
-            display: block;
-        }
-    </style>
-</head>
-<body>
-    <h1>The Domer Test</h1>
-    <!-- Added script in italics with small font and ID for styling -->
-    <em id="script"><small>Made for Notre Dame students, alum, fans, and the faithful</small></em>
-    <form id="bucketListForm">
-        <fieldset>
-            <legend>Bucket List Items</legend>
-                       <label class="checkbox-label"><span>1.</span><input type="checkbox" name="visited_grotto">Visited the Grotto?</label>
+<label class="checkbox-label"><span>1.</span><input type="checkbox" name="visited_grotto">Visited the Grotto?</label>
 <label class="checkbox-label"><span>2.</span><input type="checkbox" name="go_to_football_game">Go to a football game?</label>
 <label class="checkbox-label"><span>3.</span><input type="checkbox" name="bought_shirt">Bought the Shirt?</label>
 <label class="checkbox-label"><span>4.</span><input type="checkbox" name="attended_drum_circle">Attended drum circle?</label>
@@ -161,25 +113,3 @@
 <label class="checkbox-label"><span>113.</span><input type="checkbox" name="played_frolf_on_quads">Played frolf on quads?</label>
 <label class="checkbox-label"><span>114.</span><input type="checkbox" name="paddled_around_on_a_boating_campus">Paddled around on a boating campus?</label>
 <label class="checkbox-label"><span>115.</span><input type="checkbox" name="told_someone_you_love_nd">Told someone you love ND?</label>
-            <!-- Add more checkboxes here -->
-            <!-- For simplicity, only including the first two checkboxes -->
-        </fieldset>
-        <button type="button" onclick="calculateScore()">Calculate Score</button>
-    </form>
-    <p id="score"></p>
-    <p>Check out the <a href="https://www.youtube.com/watch?v=-QJk0ZpwRHY&t=68s&ab_channel=DrewBraaten">Biggest Party in Notre Dame History</a></p>
-
-    <script>
-        function calculateScore() {
-            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
-            var score = 0;
-            checkboxes.forEach(function(checkbox) {
-                if (checkbox.checked) {
-                    score++;
-                }
-            });
-            document.getElementById('score').textContent = "Your final score: " + score + " / 115";
-        }
-    </script>
-</body>
-</html>
